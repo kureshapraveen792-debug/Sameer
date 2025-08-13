@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Har Ghar Tiranga - Celebrate Our National Flag</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            height:10px
+    
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            
+        
+        }
+        
+        
+        header {
+            background: #FF9933;
+            color: #000;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            
+        }
+        
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+        }
+        
+        .logo {
+            width: 100px;
+            margin-bottom: 15px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #000;
+        }
+        
+        .tagline {
+            font-size: 16px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+    .hero
+         {
+            background-color:grey;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        
+      
+        
+        .hero-content {
+            
+            z-index: 1;
+            padding: 20px;
+            align-self: center;
+        }
+        
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            
+        }
+        
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #FF9933;
+            color: #000;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: bold;
+            
+        }
+        
+     
+        
+    
+        .campaign-info {
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .campaign-info h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #138808;
+        }
+        
+        .steps {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        
+        .step {
+            flex: 1;
+            min-width: 250px;
+            margin: 15px;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            
+        }
+        
+
+        
+        .step-icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+            color: #FF9933;
+        }
+        
+        .step h3 {
+            margin-bottom: 15px;
+            color: #138808;
+        }
+        
+    
+    
+        .gallery {
+            padding: 60px 0;
+            background: whitesmoke;
+        
+        
+        }
+        
+        .gallery h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #138808;
+        }
+        
+    
+    
+        
+        .gallery-item {
+            background: white;
+            border-radius: 10px;
+            overflow: scroll;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            
+            
+        }
+        
+       
+       
+        
+        .gallery-img {
+            width: 100%;
+            h
+            
+            
+        }
+        
+        .gallery-caption {
+            padding: 20px;
+        }
+        
+        .gallery-caption h3 {
+            margin-bottom: 10px;
+            color: #FF9933;
+        }
+        
+        .gallery-caption p {
+            color: #666;
+            font-style: italic;
+        }
+        
+    
+        .upload-section {
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .upload-section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #138808;
+        }
+        
+        .upload-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            height: 120px;
+        }
+        
+        
+        footer {
+            background: #138808;
+            color: #000;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .social-icons {
+            margin: 20px 0;
+        }
+        
+        .social-icons a {
+            color: #000;
+            font-size: 24px;
+            margin: 0 10px;
+            
+        }
+        
+
+        
+        .copyright {
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+        
+        #aboutme {
+            color:black;
+            padding:5px; 
+            border:5px;
+            border-radius:5px;
+            background:white;
+            margin:5px;
+        }
+    
+        @media (max-width: 768px) {
+            .steps {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .step {
+                width: 100%;
+                max-width: 350px;
+            }
+            
+            h1 {
+                font-size: 32px;
+            }
+            
+            .hero h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="container header-content">
+            <img src="https://myflag.com.au/wp-content/uploads/india-national-flag.jpg" alt="Indian Flag" class="logo">
+            <h1>Mission har Ghar Tiranga</h1>
+            <p class="tagline">हर घर तिरंगा - Every Home, The National Flag</p>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Celebrate Our National Pride</h2>
+            <p>Upload your photo with the Tiranga and share your message with the nation</p>
+        </div>
+    </section>
+    
+    <section class="campaign-info">
+        <div class="container">
+            <h2>How to Participate in Mission Har Ghar  Tiranga</h2>
+            <p>Join the movement to honor our national flag and show your patriotism</p>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">1</div>
+                    <h3>Hoist the Flag</h3>
+                    <p>Proudly display the Indian Tiranga at your home between August 13-15 year 2025</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">2</div>
+                    <h3>Take a Photo</h3>
+                    <p>Capture your moment with the national flag in the background</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <h3>Upload & Share</h3>
+                    <p>Submit your photo and message using the form below</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="gallery">
+        <div class="container">
+            <h2>Patriotic Indians with Tiranga</h2>
+            <p>See how fellow citizens are celebrating our national flag</p>
+            
+            <div class="gallery-grid">
+
+                <div class="gallery-item">
+                    <img src="https://rosemountschool.com/wp-content/uploads/2023/07/IMG_0094-min-scaled-1.jpeg"  class="gallery-img">
+                    <div class="gallery-caption">
+                        <h3>Students Holding A flag</h3>
+                        <p>"We are proud Indians and will always stand by our nation. Jai Hind!"</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2022-01/04/full/1641307129-4475.jpg?im=FeatureCrop,size=(382,233)"  class="gallery-img">
+                    <div class="gallery-caption">
+                        <h3>Army Holding A flag</h3>
+                        <p>"We pledge to serve our country with honesty and dedication."</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://i.pinimg.com/736x/0c/6d/8e/0c6d8ed1adfa0c170b524f38dc26916e.jpg" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h3>Har Ghar Tiranga : PM Modi</h3>
+                        <p>"Serving the nation is my greatest honor. The Tiranga represents our unity and strength."</p>
+                    </div>
+                </div>
+                
+            
+                
+                <div class="gallery-item">
+                    <img src="https://www.amitshah.co.in/storage/uploads/1/1672751913-63b42b2933488.jpg" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h3>Har Ghar Tiranga : Amit Shah</h3>
+                        <p>"As a young Indian, I promise to contribute to our nation's development."</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://www.pioneeredge.in/wp-content/uploads/2022/08/Tiranga-yatra-780x470.jpg" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h3> Har Ghar tiranga March in Dehradun </h3>
+                        <p>"Our community stands united in love for our country and respect for our flag."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="upload-section" id="upload">
+        <div class="container">
+            <h2>Share Your Tiranga Moment</h2>
+            <p>Upload your photo with the Indian flag and your message</p>
+            
+            <form class="upload-form" action="https://codeyogi.io/save" >
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" required>
+                    
+                </div>
+                
+                <div class="form-group">
+                    <label for="photo">Your Photo with Tiranga</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your  Message</label>
+                 <textarea id="message" name="message" required></textarea>
+                </div>
+            
+                
+                <button type="submit" class="btn">Submit </button>
+            </form>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <div class="container footer-content">
+            <h3>Mission Har Ghar  Tiranga</h3>
+            <p>Celebrating the spirit of India and its people</p>
+            
+            
+            
+            <p class="copyright"> 2025 Mission Har Ghat Tiranga.</p>
+            <p class="info">This website is made by Mo.Sameer Hasan for a Codeyogi project</p>
+            <a id="aboutme"href="aboutme.html" target="_blank">about me</a>
+        </div>
+    </footer>
+</body>
+</html>
